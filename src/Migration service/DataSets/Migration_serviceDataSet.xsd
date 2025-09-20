@@ -511,123 +511,92 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="Migration_serviceDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Migration_serviceDataSet" msprop:Generator_UserDSName="Migration_serviceDataSet">
+  <xs:element name="Migration_serviceDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Migration_serviceDataSet" msprop:Generator_DataSetName="Migration_serviceDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Мигрант" msprop:Generator_TableClassName="МигрантDataTable" msprop:Generator_TableVarName="tableМигрант" msprop:Generator_TablePropName="Мигрант" msprop:Generator_RowDeletingName="МигрантRowDeleting" msprop:Generator_RowChangingName="МигрантRowChanging" msprop:Generator_RowEvHandlerName="МигрантRowChangeEventHandler" msprop:Generator_RowDeletedName="МигрантRowDeleted" msprop:Generator_UserTableName="Мигрант" msprop:Generator_RowChangedName="МигрантRowChanged" msprop:Generator_RowEvArgName="МигрантRowChangeEvent" msprop:Generator_RowClassName="МигрантRow">
+        <xs:element name="Мигрант" msprop:Generator_RowClassName="МигрантRow" msprop:Generator_RowEvHandlerName="МигрантRowChangeEventHandler" msprop:Generator_RowDeletedName="МигрантRowDeleted" msprop:Generator_RowDeletingName="МигрантRowDeleting" msprop:Generator_RowEvArgName="МигрантRowChangeEvent" msprop:Generator_TablePropName="Мигрант" msprop:Generator_RowChangedName="МигрантRowChanged" msprop:Generator_RowChangingName="МигрантRowChanging" msprop:Generator_TableClassName="МигрантDataTable" msprop:Generator_UserTableName="Мигрант" msprop:Generator_TableVarName="tableМигрант">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_миг" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_UserColumnName="ID_миг" type="xs:int" />
-              <xs:element name="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+              <xs:element name="ID_миг" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_UserColumnName="ID_миг" type="xs:int" />
+              <xs:element name="ФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Дата_рожд" msprop:Generator_ColumnVarNameInTable="columnДата_рожд" msprop:Generator_ColumnPropNameInRow="Дата_рожд" msprop:Generator_ColumnPropNameInTable="Дата_рождColumn" msprop:Generator_UserColumnName="Дата_рожд" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Пол" msprop:Generator_ColumnVarNameInTable="columnПол" msprop:Generator_ColumnPropNameInRow="Пол" msprop:Generator_ColumnPropNameInTable="ПолColumn" msprop:Generator_UserColumnName="Пол" minOccurs="0">
+              <xs:element name="Дата_рожд" msprop:Generator_ColumnPropNameInRow="Дата_рожд" msprop:Generator_ColumnPropNameInTable="Дата_рождColumn" msprop:Generator_ColumnVarNameInTable="columnДата_рожд" msprop:Generator_UserColumnName="Дата_рожд" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Пол" msprop:Generator_ColumnPropNameInRow="Пол" msprop:Generator_ColumnPropNameInTable="ПолColumn" msprop:Generator_ColumnVarNameInTable="columnПол" msprop:Generator_UserColumnName="Пол" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Страна" msprop:Generator_ColumnVarNameInTable="columnСтрана" msprop:Generator_ColumnPropNameInRow="Страна" msprop:Generator_ColumnPropNameInTable="СтранаColumn" msprop:Generator_UserColumnName="Страна" type="xs:int" minOccurs="0" />
-              <xs:element name="Мест_рожд" msprop:Generator_ColumnVarNameInTable="columnМест_рожд" msprop:Generator_ColumnPropNameInRow="Мест_рожд" msprop:Generator_ColumnPropNameInTable="Мест_рождColumn" msprop:Generator_UserColumnName="Мест_рожд" minOccurs="0">
+              <xs:element name="Страна" msprop:Generator_ColumnPropNameInRow="Страна" msprop:Generator_ColumnPropNameInTable="СтранаColumn" msprop:Generator_ColumnVarNameInTable="columnСтрана" msprop:Generator_UserColumnName="Страна" type="xs:int" minOccurs="0" />
+              <xs:element name="Мест_рожд" msprop:Generator_ColumnPropNameInRow="Мест_рожд" msprop:Generator_ColumnPropNameInTable="Мест_рождColumn" msprop:Generator_ColumnVarNameInTable="columnМест_рожд" msprop:Generator_UserColumnName="Мест_рожд" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Пасп" msprop:Generator_ColumnVarNameInTable="columnПасп" msprop:Generator_ColumnPropNameInRow="Пасп" msprop:Generator_ColumnPropNameInTable="ПаспColumn" msprop:Generator_UserColumnName="Пасп" minOccurs="0">
+              <xs:element name="Пасп" msprop:Generator_ColumnPropNameInRow="Пасп" msprop:Generator_ColumnPropNameInTable="ПаспColumn" msprop:Generator_ColumnVarNameInTable="columnПасп" msprop:Generator_UserColumnName="Пасп" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Ном_МК" msprop:Generator_ColumnVarNameInTable="columnНом_МК" msprop:Generator_ColumnPropNameInRow="Ном_МК" msprop:Generator_ColumnPropNameInTable="Ном_МКColumn" msprop:Generator_UserColumnName="Ном_МК" minOccurs="0">
+              <xs:element name="Ном_МК" msprop:Generator_ColumnPropNameInRow="Ном_МК" msprop:Generator_ColumnPropNameInTable="Ном_МКColumn" msprop:Generator_ColumnVarNameInTable="columnНом_МК" msprop:Generator_UserColumnName="Ном_МК" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Цель" msprop:Generator_ColumnVarNameInTable="columnЦель" msprop:Generator_ColumnPropNameInRow="Цель" msprop:Generator_ColumnPropNameInTable="ЦельColumn" msprop:Generator_UserColumnName="Цель" type="xs:int" minOccurs="0" />
-              <xs:element name="Прин_стор" msprop:Generator_ColumnVarNameInTable="columnПрин_стор" msprop:Generator_ColumnPropNameInRow="Прин_стор" msprop:Generator_ColumnPropNameInTable="Прин_сторColumn" msprop:Generator_UserColumnName="Прин_стор" minOccurs="0">
+              <xs:element name="Цель" msprop:Generator_ColumnPropNameInRow="Цель" msprop:Generator_ColumnPropNameInTable="ЦельColumn" msprop:Generator_ColumnVarNameInTable="columnЦель" msprop:Generator_UserColumnName="Цель" type="xs:int" minOccurs="0" />
+              <xs:element name="Прин_стор" msprop:Generator_ColumnPropNameInRow="Прин_стор" msprop:Generator_ColumnPropNameInTable="Прин_сторColumn" msprop:Generator_ColumnVarNameInTable="columnПрин_стор" msprop:Generator_UserColumnName="Прин_стор" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Срок_с" msprop:Generator_ColumnVarNameInTable="columnСрок_с" msprop:Generator_ColumnPropNameInRow="Срок_с" msprop:Generator_ColumnPropNameInTable="Срок_сColumn" msprop:Generator_UserColumnName="Срок_с" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Срок_до" msprop:Generator_ColumnVarNameInTable="columnСрок_до" msprop:Generator_ColumnPropNameInRow="Срок_до" msprop:Generator_ColumnPropNameInTable="Срок_доColumn" msprop:Generator_UserColumnName="Срок_до" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Срок_с" msprop:Generator_ColumnPropNameInRow="Срок_с" msprop:Generator_ColumnPropNameInTable="Срок_сColumn" msprop:Generator_ColumnVarNameInTable="columnСрок_с" msprop:Generator_UserColumnName="Срок_с" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Срок_до" msprop:Generator_ColumnPropNameInRow="Срок_до" msprop:Generator_ColumnPropNameInTable="Срок_доColumn" msprop:Generator_ColumnVarNameInTable="columnСрок_до" msprop:Generator_UserColumnName="Срок_до" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Патент" msprop:Generator_TableClassName="ПатентDataTable" msprop:Generator_TableVarName="tableПатент" msprop:Generator_TablePropName="Патент" msprop:Generator_RowDeletingName="ПатентRowDeleting" msprop:Generator_RowChangingName="ПатентRowChanging" msprop:Generator_RowEvHandlerName="ПатентRowChangeEventHandler" msprop:Generator_RowDeletedName="ПатентRowDeleted" msprop:Generator_UserTableName="Патент" msprop:Generator_RowChangedName="ПатентRowChanged" msprop:Generator_RowEvArgName="ПатентRowChangeEvent" msprop:Generator_RowClassName="ПатентRow">
+        <xs:element name="Патент" msprop:Generator_RowClassName="ПатентRow" msprop:Generator_RowEvHandlerName="ПатентRowChangeEventHandler" msprop:Generator_RowDeletedName="ПатентRowDeleted" msprop:Generator_RowDeletingName="ПатентRowDeleting" msprop:Generator_RowEvArgName="ПатентRowChangeEvent" msprop:Generator_TablePropName="Патент" msprop:Generator_RowChangedName="ПатентRowChanged" msprop:Generator_RowChangingName="ПатентRowChanging" msprop:Generator_TableClassName="ПатентDataTable" msprop:Generator_UserTableName="Патент" msprop:Generator_TableVarName="tableПатент">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_пат" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_пат" msprop:Generator_ColumnPropNameInRow="ID_пат" msprop:Generator_ColumnPropNameInTable="ID_патColumn" msprop:Generator_UserColumnName="ID_пат" type="xs:int" />
-              <xs:element name="ID_миг" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
-              <xs:element name="Серия" msprop:Generator_ColumnVarNameInTable="columnСерия" msprop:Generator_ColumnPropNameInRow="Серия" msprop:Generator_ColumnPropNameInTable="СерияColumn" msprop:Generator_UserColumnName="Серия" minOccurs="0">
+              <xs:element name="ID_пат" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_пат" msprop:Generator_ColumnPropNameInTable="ID_патColumn" msprop:Generator_ColumnVarNameInTable="columnID_пат" msprop:Generator_UserColumnName="ID_пат" type="xs:int" />
+              <xs:element name="ID_миг" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
+              <xs:element name="Серия" msprop:Generator_ColumnPropNameInRow="Серия" msprop:Generator_ColumnPropNameInTable="СерияColumn" msprop:Generator_ColumnVarNameInTable="columnСерия" msprop:Generator_UserColumnName="Серия" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Номер" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_UserColumnName="Номер" minOccurs="0">
+              <xs:element name="Номер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_UserColumnName="Номер" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Проф" msprop:Generator_ColumnVarNameInTable="columnПроф" msprop:Generator_ColumnPropNameInRow="Проф" msprop:Generator_ColumnPropNameInTable="ПрофColumn" msprop:Generator_UserColumnName="Проф" type="xs:int" minOccurs="0" />
-              <xs:element name="Дата_выд" msprop:Generator_ColumnVarNameInTable="columnДата_выд" msprop:Generator_ColumnPropNameInRow="Дата_выд" msprop:Generator_ColumnPropNameInTable="Дата_выдColumn" msprop:Generator_UserColumnName="Дата_выд" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Проф" msprop:Generator_ColumnPropNameInRow="Проф" msprop:Generator_ColumnPropNameInTable="ПрофColumn" msprop:Generator_ColumnVarNameInTable="columnПроф" msprop:Generator_UserColumnName="Проф" type="xs:int" minOccurs="0" />
+              <xs:element name="Дата_выд" msprop:Generator_ColumnPropNameInRow="Дата_выд" msprop:Generator_ColumnPropNameInTable="Дата_выдColumn" msprop:Generator_ColumnVarNameInTable="columnДата_выд" msprop:Generator_UserColumnName="Дата_выд" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Профессия" msprop:Generator_TableClassName="ПрофессияDataTable" msprop:Generator_TableVarName="tableПрофессия" msprop:Generator_TablePropName="Профессия" msprop:Generator_RowDeletingName="ПрофессияRowDeleting" msprop:Generator_RowChangingName="ПрофессияRowChanging" msprop:Generator_RowEvHandlerName="ПрофессияRowChangeEventHandler" msprop:Generator_RowDeletedName="ПрофессияRowDeleted" msprop:Generator_UserTableName="Профессия" msprop:Generator_RowChangedName="ПрофессияRowChanged" msprop:Generator_RowEvArgName="ПрофессияRowChangeEvent" msprop:Generator_RowClassName="ПрофессияRow">
+        <xs:element name="Профессия" msprop:Generator_RowClassName="ПрофессияRow" msprop:Generator_RowEvHandlerName="ПрофессияRowChangeEventHandler" msprop:Generator_RowDeletedName="ПрофессияRowDeleted" msprop:Generator_RowDeletingName="ПрофессияRowDeleting" msprop:Generator_RowEvArgName="ПрофессияRowChangeEvent" msprop:Generator_TablePropName="Профессия" msprop:Generator_RowChangedName="ПрофессияRowChanged" msprop:Generator_RowChangingName="ПрофессияRowChanging" msprop:Generator_TableClassName="ПрофессияDataTable" msprop:Generator_UserTableName="Профессия" msprop:Generator_TableVarName="tableПрофессия">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_проф" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_проф" msprop:Generator_ColumnPropNameInRow="ID_проф" msprop:Generator_ColumnPropNameInTable="ID_профColumn" msprop:Generator_UserColumnName="ID_проф" type="xs:int" />
-              <xs:element name="Назв_проф" msprop:Generator_ColumnVarNameInTable="columnНазв_проф" msprop:Generator_ColumnPropNameInRow="Назв_проф" msprop:Generator_ColumnPropNameInTable="Назв_профColumn" msprop:Generator_UserColumnName="Назв_проф" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="РВП" msprop:Generator_TableClassName="РВПDataTable" msprop:Generator_TableVarName="tableРВП" msprop:Generator_TablePropName="РВП" msprop:Generator_RowDeletingName="РВПRowDeleting" msprop:Generator_RowChangingName="РВПRowChanging" msprop:Generator_RowEvHandlerName="РВПRowChangeEventHandler" msprop:Generator_RowDeletedName="РВПRowDeleted" msprop:Generator_UserTableName="РВП" msprop:Generator_RowChangedName="РВПRowChanged" msprop:Generator_RowEvArgName="РВПRowChangeEvent" msprop:Generator_RowClassName="РВПRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID_РВП" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_РВП" msprop:Generator_ColumnPropNameInRow="ID_РВП" msprop:Generator_ColumnPropNameInTable="ID_РВПColumn" msprop:Generator_UserColumnName="ID_РВП" type="xs:int" />
-              <xs:element name="ID_миг" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
-              <xs:element name="Номер" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_UserColumnName="Номер" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Дата_реш" msprop:Generator_ColumnVarNameInTable="columnДата_реш" msprop:Generator_ColumnPropNameInRow="Дата_реш" msprop:Generator_ColumnPropNameInTable="Дата_решColumn" msprop:Generator_UserColumnName="Дата_реш" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Срок" msprop:Generator_ColumnVarNameInTable="columnСрок" msprop:Generator_ColumnPropNameInRow="Срок" msprop:Generator_ColumnPropNameInTable="СрокColumn" msprop:Generator_UserColumnName="Срок" type="xs:dateTime" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Страна" msprop:Generator_TableClassName="СтранаDataTable" msprop:Generator_TableVarName="tableСтрана" msprop:Generator_TablePropName="Страна" msprop:Generator_RowDeletingName="СтранаRowDeleting" msprop:Generator_RowChangingName="СтранаRowChanging" msprop:Generator_RowEvHandlerName="СтранаRowChangeEventHandler" msprop:Generator_RowDeletedName="СтранаRowDeleted" msprop:Generator_UserTableName="Страна" msprop:Generator_RowChangedName="СтранаRowChanged" msprop:Generator_RowEvArgName="СтранаRowChangeEvent" msprop:Generator_RowClassName="СтранаRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID_стран" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_стран" msprop:Generator_ColumnPropNameInRow="ID_стран" msprop:Generator_ColumnPropNameInTable="ID_странColumn" msprop:Generator_UserColumnName="ID_стран" type="xs:int" />
-              <xs:element name="Назв_стран" msprop:Generator_ColumnVarNameInTable="columnНазв_стран" msprop:Generator_ColumnPropNameInRow="Назв_стран" msprop:Generator_ColumnPropNameInTable="Назв_странColumn" msprop:Generator_UserColumnName="Назв_стран" minOccurs="0">
+              <xs:element name="ID_проф" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_проф" msprop:Generator_ColumnPropNameInTable="ID_профColumn" msprop:Generator_ColumnVarNameInTable="columnID_проф" msprop:Generator_UserColumnName="ID_проф" type="xs:int" />
+              <xs:element name="Назв_проф" msprop:Generator_ColumnPropNameInRow="Назв_проф" msprop:Generator_ColumnPropNameInTable="Назв_профColumn" msprop:Generator_ColumnVarNameInTable="columnНазв_проф" msprop:Generator_UserColumnName="Назв_проф" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -637,11 +606,28 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Цели" msprop:Generator_TableClassName="ЦелиDataTable" msprop:Generator_TableVarName="tableЦели" msprop:Generator_TablePropName="Цели" msprop:Generator_RowDeletingName="ЦелиRowDeleting" msprop:Generator_RowChangingName="ЦелиRowChanging" msprop:Generator_RowEvHandlerName="ЦелиRowChangeEventHandler" msprop:Generator_RowDeletedName="ЦелиRowDeleted" msprop:Generator_UserTableName="Цели" msprop:Generator_RowChangedName="ЦелиRowChanged" msprop:Generator_RowEvArgName="ЦелиRowChangeEvent" msprop:Generator_RowClassName="ЦелиRow">
+        <xs:element name="РВП" msprop:Generator_RowClassName="РВПRow" msprop:Generator_RowEvHandlerName="РВПRowChangeEventHandler" msprop:Generator_RowDeletedName="РВПRowDeleted" msprop:Generator_RowDeletingName="РВПRowDeleting" msprop:Generator_RowEvArgName="РВПRowChangeEvent" msprop:Generator_TablePropName="РВП" msprop:Generator_RowChangedName="РВПRowChanged" msprop:Generator_RowChangingName="РВПRowChanging" msprop:Generator_TableClassName="РВПDataTable" msprop:Generator_UserTableName="РВП" msprop:Generator_TableVarName="tableРВП">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Код_цели" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnКод_цели" msprop:Generator_ColumnPropNameInRow="Код_цели" msprop:Generator_ColumnPropNameInTable="Код_целиColumn" msprop:Generator_UserColumnName="Код_цели" type="xs:int" />
-              <xs:element name="Цель" msprop:Generator_ColumnVarNameInTable="columnЦель" msprop:Generator_ColumnPropNameInRow="Цель" msprop:Generator_ColumnPropNameInTable="ЦельColumn" msprop:Generator_UserColumnName="Цель" minOccurs="0">
+              <xs:element name="ID_РВП" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_РВП" msprop:Generator_ColumnPropNameInTable="ID_РВПColumn" msprop:Generator_ColumnVarNameInTable="columnID_РВП" msprop:Generator_UserColumnName="ID_РВП" type="xs:int" />
+              <xs:element name="ID_миг" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
+              <xs:element name="Номер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_UserColumnName="Номер" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_реш" msprop:Generator_ColumnPropNameInRow="Дата_реш" msprop:Generator_ColumnPropNameInTable="Дата_решColumn" msprop:Generator_ColumnVarNameInTable="columnДата_реш" msprop:Generator_UserColumnName="Дата_реш" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Срок" msprop:Generator_ColumnPropNameInRow="Срок" msprop:Generator_ColumnPropNameInTable="СрокColumn" msprop:Generator_ColumnVarNameInTable="columnСрок" msprop:Generator_UserColumnName="Срок" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Страна" msprop:Generator_RowClassName="СтранаRow" msprop:Generator_RowEvHandlerName="СтранаRowChangeEventHandler" msprop:Generator_RowDeletedName="СтранаRowDeleted" msprop:Generator_RowDeletingName="СтранаRowDeleting" msprop:Generator_RowEvArgName="СтранаRowChangeEvent" msprop:Generator_TablePropName="Страна" msprop:Generator_RowChangedName="СтранаRowChanged" msprop:Generator_RowChangingName="СтранаRowChanging" msprop:Generator_TableClassName="СтранаDataTable" msprop:Generator_UserTableName="Страна" msprop:Generator_TableVarName="tableСтрана">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_стран" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_стран" msprop:Generator_ColumnPropNameInTable="ID_странColumn" msprop:Generator_ColumnVarNameInTable="columnID_стран" msprop:Generator_UserColumnName="ID_стран" type="xs:int" />
+              <xs:element name="Назв_стран" msprop:Generator_ColumnPropNameInRow="Назв_стран" msprop:Generator_ColumnPropNameInTable="Назв_странColumn" msprop:Generator_ColumnVarNameInTable="columnНазв_стран" msprop:Generator_UserColumnName="Назв_стран" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -651,122 +637,136 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="РВП_Мигранта" msprop:Generator_TableClassName="РВП_МигрантаDataTable" msprop:Generator_TableVarName="tableРВП_Мигранта" msprop:Generator_TablePropName="РВП_Мигранта" msprop:Generator_RowDeletingName="РВП_МигрантаRowDeleting" msprop:Generator_RowChangingName="РВП_МигрантаRowChanging" msprop:Generator_RowEvHandlerName="РВП_МигрантаRowChangeEventHandler" msprop:Generator_RowDeletedName="РВП_МигрантаRowDeleted" msprop:Generator_UserTableName="РВП_Мигранта" msprop:Generator_RowChangedName="РВП_МигрантаRowChanged" msprop:Generator_RowEvArgName="РВП_МигрантаRowChangeEvent" msprop:Generator_RowClassName="РВП_МигрантаRow">
+        <xs:element name="Цели" msprop:Generator_RowClassName="ЦелиRow" msprop:Generator_RowEvHandlerName="ЦелиRowChangeEventHandler" msprop:Generator_RowDeletedName="ЦелиRowDeleted" msprop:Generator_RowDeletingName="ЦелиRowDeleting" msprop:Generator_RowEvArgName="ЦелиRowChangeEvent" msprop:Generator_TablePropName="Цели" msprop:Generator_RowChangedName="ЦелиRowChanged" msprop:Generator_RowChangingName="ЦелиRowChanging" msprop:Generator_TableClassName="ЦелиDataTable" msprop:Generator_UserTableName="Цели" msprop:Generator_TableVarName="tableЦели">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_миг" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
-              <xs:element name="ID_РВП" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_РВП" msprop:Generator_ColumnPropNameInRow="ID_РВП" msprop:Generator_ColumnPropNameInTable="ID_РВПColumn" msprop:Generator_UserColumnName="ID_РВП" type="xs:int" minOccurs="0" />
-              <xs:element name="Номер" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_UserColumnName="Номер" minOccurs="0">
+              <xs:element name="Код_цели" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Код_цели" msprop:Generator_ColumnPropNameInTable="Код_целиColumn" msprop:Generator_ColumnVarNameInTable="columnКод_цели" msprop:Generator_UserColumnName="Код_цели" type="xs:int" />
+              <xs:element name="Цель" msprop:Generator_ColumnPropNameInRow="Цель" msprop:Generator_ColumnPropNameInTable="ЦельColumn" msprop:Generator_ColumnVarNameInTable="columnЦель" msprop:Generator_UserColumnName="Цель" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Дата_реш" msprop:Generator_ColumnVarNameInTable="columnДата_реш" msprop:Generator_ColumnPropNameInRow="Дата_реш" msprop:Generator_ColumnPropNameInTable="Дата_решColumn" msprop:Generator_UserColumnName="Дата_реш" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Срок" msprop:Generator_ColumnVarNameInTable="columnСрок" msprop:Generator_ColumnPropNameInRow="Срок" msprop:Generator_ColumnPropNameInTable="СрокColumn" msprop:Generator_UserColumnName="Срок" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Мигрант1" msprop:Generator_TableClassName="Мигрант1DataTable" msprop:Generator_TableVarName="tableМигрант1" msprop:Generator_RowChangedName="Мигрант1RowChanged" msprop:Generator_TablePropName="Мигрант1" msprop:Generator_RowDeletingName="Мигрант1RowDeleting" msprop:Generator_RowChangingName="Мигрант1RowChanging" msprop:Generator_RowEvHandlerName="Мигрант1RowChangeEventHandler" msprop:Generator_RowDeletedName="Мигрант1RowDeleted" msprop:Generator_RowClassName="Мигрант1Row" msprop:Generator_UserTableName="Мигрант1" msprop:Generator_RowEvArgName="Мигрант1RowChangeEvent">
+        <xs:element name="РВП_Мигранта" msprop:Generator_RowClassName="РВП_МигрантаRow" msprop:Generator_RowEvHandlerName="РВП_МигрантаRowChangeEventHandler" msprop:Generator_RowDeletedName="РВП_МигрантаRowDeleted" msprop:Generator_RowDeletingName="РВП_МигрантаRowDeleting" msprop:Generator_RowEvArgName="РВП_МигрантаRowChangeEvent" msprop:Generator_TablePropName="РВП_Мигранта" msprop:Generator_RowChangedName="РВП_МигрантаRowChanged" msprop:Generator_RowChangingName="РВП_МигрантаRowChanging" msprop:Generator_TableClassName="РВП_МигрантаDataTable" msprop:Generator_UserTableName="РВП_Мигранта" msprop:Generator_TableVarName="tableРВП_Мигранта">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_миг" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
-              <xs:element name="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+              <xs:element name="ID_миг" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
+              <xs:element name="ID_РВП" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_РВП" msprop:Generator_ColumnPropNameInTable="ID_РВПColumn" msprop:Generator_ColumnVarNameInTable="columnID_РВП" msprop:Generator_UserColumnName="ID_РВП" type="xs:int" minOccurs="0" />
+              <xs:element name="Номер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_UserColumnName="Номер" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Дата_рожд" msprop:Generator_ColumnVarNameInTable="columnДата_рожд" msprop:Generator_ColumnPropNameInRow="Дата_рожд" msprop:Generator_ColumnPropNameInTable="Дата_рождColumn" msprop:Generator_UserColumnName="Дата_рожд" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Пол" msprop:Generator_ColumnVarNameInTable="columnПол" msprop:Generator_ColumnPropNameInRow="Пол" msprop:Generator_ColumnPropNameInTable="ПолColumn" msprop:Generator_UserColumnName="Пол" minOccurs="0">
+              <xs:element name="Дата_реш" msprop:Generator_ColumnPropNameInRow="Дата_реш" msprop:Generator_ColumnPropNameInTable="Дата_решColumn" msprop:Generator_ColumnVarNameInTable="columnДата_реш" msprop:Generator_UserColumnName="Дата_реш" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Срок" msprop:Generator_ColumnPropNameInRow="Срок" msprop:Generator_ColumnPropNameInTable="СрокColumn" msprop:Generator_ColumnVarNameInTable="columnСрок" msprop:Generator_UserColumnName="Срок" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Мигрант1" msprop:Generator_RowEvHandlerName="Мигрант1RowChangeEventHandler" msprop:Generator_RowDeletedName="Мигрант1RowDeleted" msprop:Generator_RowDeletingName="Мигрант1RowDeleting" msprop:Generator_RowEvArgName="Мигрант1RowChangeEvent" msprop:Generator_TablePropName="Мигрант1" msprop:Generator_RowChangedName="Мигрант1RowChanged" msprop:Generator_RowChangingName="Мигрант1RowChanging" msprop:Generator_TableClassName="Мигрант1DataTable" msprop:Generator_RowClassName="Мигрант1Row" msprop:Generator_TableVarName="tableМигрант1" msprop:Generator_UserTableName="Мигрант1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_миг" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
+              <xs:element name="ФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_рожд" msprop:Generator_ColumnPropNameInRow="Дата_рожд" msprop:Generator_ColumnPropNameInTable="Дата_рождColumn" msprop:Generator_ColumnVarNameInTable="columnДата_рожд" msprop:Generator_UserColumnName="Дата_рожд" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Пол" msprop:Generator_ColumnPropNameInRow="Пол" msprop:Generator_ColumnPropNameInTable="ПолColumn" msprop:Generator_ColumnVarNameInTable="columnПол" msprop:Generator_UserColumnName="Пол" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Назв_стран" msprop:Generator_ColumnVarNameInTable="columnНазв_стран" msprop:Generator_ColumnPropNameInRow="Назв_стран" msprop:Generator_ColumnPropNameInTable="Назв_странColumn" msprop:Generator_UserColumnName="Назв_стран" minOccurs="0">
+              <xs:element name="Назв_стран" msprop:Generator_ColumnPropNameInRow="Назв_стран" msprop:Generator_ColumnPropNameInTable="Назв_странColumn" msprop:Generator_ColumnVarNameInTable="columnНазв_стран" msprop:Generator_UserColumnName="Назв_стран" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Мест_рожд" msprop:Generator_ColumnVarNameInTable="columnМест_рожд" msprop:Generator_ColumnPropNameInRow="Мест_рожд" msprop:Generator_ColumnPropNameInTable="Мест_рождColumn" msprop:Generator_UserColumnName="Мест_рожд" minOccurs="0">
+              <xs:element name="Мест_рожд" msprop:Generator_ColumnPropNameInRow="Мест_рожд" msprop:Generator_ColumnPropNameInTable="Мест_рождColumn" msprop:Generator_ColumnVarNameInTable="columnМест_рожд" msprop:Generator_UserColumnName="Мест_рожд" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Пасп" msprop:Generator_ColumnVarNameInTable="columnПасп" msprop:Generator_ColumnPropNameInRow="Пасп" msprop:Generator_ColumnPropNameInTable="ПаспColumn" msprop:Generator_UserColumnName="Пасп" minOccurs="0">
+              <xs:element name="Пасп" msprop:Generator_ColumnPropNameInRow="Пасп" msprop:Generator_ColumnPropNameInTable="ПаспColumn" msprop:Generator_ColumnVarNameInTable="columnПасп" msprop:Generator_UserColumnName="Пасп" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Ном_МК" msprop:Generator_ColumnVarNameInTable="columnНом_МК" msprop:Generator_ColumnPropNameInRow="Ном_МК" msprop:Generator_ColumnPropNameInTable="Ном_МКColumn" msprop:Generator_UserColumnName="Ном_МК" minOccurs="0">
+              <xs:element name="Ном_МК" msprop:Generator_ColumnPropNameInRow="Ном_МК" msprop:Generator_ColumnPropNameInTable="Ном_МКColumn" msprop:Generator_ColumnVarNameInTable="columnНом_МК" msprop:Generator_UserColumnName="Ном_МК" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Цель" msprop:Generator_ColumnVarNameInTable="columnЦель" msprop:Generator_ColumnPropNameInRow="Цель" msprop:Generator_ColumnPropNameInTable="ЦельColumn" msprop:Generator_UserColumnName="Цель" type="xs:string" minOccurs="0" />
-              <xs:element name="Прин_стор" msprop:Generator_ColumnVarNameInTable="columnПрин_стор" msprop:Generator_ColumnPropNameInRow="Прин_стор" msprop:Generator_ColumnPropNameInTable="Прин_сторColumn" msprop:Generator_UserColumnName="Прин_стор" minOccurs="0">
+              <xs:element name="Цель" msprop:Generator_ColumnPropNameInRow="Цель" msprop:Generator_ColumnPropNameInTable="ЦельColumn" msprop:Generator_ColumnVarNameInTable="columnЦель" msprop:Generator_UserColumnName="Цель" type="xs:string" minOccurs="0" />
+              <xs:element name="Прин_стор" msprop:Generator_ColumnPropNameInRow="Прин_стор" msprop:Generator_ColumnPropNameInTable="Прин_сторColumn" msprop:Generator_ColumnVarNameInTable="columnПрин_стор" msprop:Generator_UserColumnName="Прин_стор" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Срок_с" msprop:Generator_ColumnVarNameInTable="columnСрок_с" msprop:Generator_ColumnPropNameInRow="Срок_с" msprop:Generator_ColumnPropNameInTable="Срок_сColumn" msprop:Generator_UserColumnName="Срок_с" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Срок_до" msprop:Generator_ColumnVarNameInTable="columnСрок_до" msprop:Generator_ColumnPropNameInRow="Срок_до" msprop:Generator_ColumnPropNameInTable="Срок_доColumn" msprop:Generator_UserColumnName="Срок_до" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Срок_с" msprop:Generator_ColumnPropNameInRow="Срок_с" msprop:Generator_ColumnPropNameInTable="Срок_сColumn" msprop:Generator_ColumnVarNameInTable="columnСрок_с" msprop:Generator_UserColumnName="Срок_с" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Срок_до" msprop:Generator_ColumnPropNameInRow="Срок_до" msprop:Generator_ColumnPropNameInTable="Срок_доColumn" msprop:Generator_ColumnVarNameInTable="columnСрок_до" msprop:Generator_UserColumnName="Срок_до" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Патенты_Мигранта" msprop:Generator_TableClassName="Патенты_МигрантаDataTable" msprop:Generator_TableVarName="tableПатенты_Мигранта" msprop:Generator_RowChangedName="Патенты_МигрантаRowChanged" msprop:Generator_TablePropName="Патенты_Мигранта" msprop:Generator_RowDeletingName="Патенты_МигрантаRowDeleting" msprop:Generator_RowChangingName="Патенты_МигрантаRowChanging" msprop:Generator_RowEvHandlerName="Патенты_МигрантаRowChangeEventHandler" msprop:Generator_RowDeletedName="Патенты_МигрантаRowDeleted" msprop:Generator_RowClassName="Патенты_МигрантаRow" msprop:Generator_UserTableName="Патенты_Мигранта" msprop:Generator_RowEvArgName="Патенты_МигрантаRowChangeEvent">
+        <xs:element name="Патенты_Мигранта" msprop:Generator_RowEvHandlerName="Патенты_МигрантаRowChangeEventHandler" msprop:Generator_RowDeletedName="Патенты_МигрантаRowDeleted" msprop:Generator_RowDeletingName="Патенты_МигрантаRowDeleting" msprop:Generator_RowEvArgName="Патенты_МигрантаRowChangeEvent" msprop:Generator_TablePropName="Патенты_Мигранта" msprop:Generator_RowChangedName="Патенты_МигрантаRowChanged" msprop:Generator_RowChangingName="Патенты_МигрантаRowChanging" msprop:Generator_TableClassName="Патенты_МигрантаDataTable" msprop:Generator_RowClassName="Патенты_МигрантаRow" msprop:Generator_TableVarName="tableПатенты_Мигранта" msprop:Generator_UserTableName="Патенты_Мигранта">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_миг" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
-              <xs:element name="ID_пат" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_пат" msprop:Generator_ColumnPropNameInRow="ID_пат" msprop:Generator_ColumnPropNameInTable="ID_патColumn" msprop:Generator_UserColumnName="ID_пат" type="xs:int" minOccurs="0" />
-              <xs:element name="Серия" msprop:Generator_ColumnVarNameInTable="columnСерия" msprop:Generator_ColumnPropNameInRow="Серия" msprop:Generator_ColumnPropNameInTable="СерияColumn" msprop:Generator_UserColumnName="Серия" minOccurs="0">
+              <xs:element name="ID_миг" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_миг" msprop:Generator_ColumnPropNameInTable="ID_мигColumn" msprop:Generator_ColumnVarNameInTable="columnID_миг" msprop:Generator_UserColumnName="ID_миг" type="xs:int" minOccurs="0" />
+              <xs:element name="ID_пат" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_пат" msprop:Generator_ColumnPropNameInTable="ID_патColumn" msprop:Generator_ColumnVarNameInTable="columnID_пат" msprop:Generator_UserColumnName="ID_пат" type="xs:int" minOccurs="0" />
+              <xs:element name="Серия" msprop:Generator_ColumnPropNameInRow="Серия" msprop:Generator_ColumnPropNameInTable="СерияColumn" msprop:Generator_ColumnVarNameInTable="columnСерия" msprop:Generator_UserColumnName="Серия" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Номер" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_UserColumnName="Номер" minOccurs="0">
+              <xs:element name="Номер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_UserColumnName="Номер" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Проф" msprop:Generator_ColumnVarNameInTable="columnПроф" msprop:Generator_ColumnPropNameInRow="Проф" msprop:Generator_ColumnPropNameInTable="ПрофColumn" msprop:Generator_UserColumnName="Проф" type="xs:string" minOccurs="0" />
-              <xs:element name="Дата_выд" msprop:Generator_ColumnVarNameInTable="columnДата_выд" msprop:Generator_ColumnPropNameInRow="Дата_выд" msprop:Generator_ColumnPropNameInTable="Дата_выдColumn" msprop:Generator_UserColumnName="Дата_выд" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Проф" msprop:Generator_ColumnPropNameInRow="Проф" msprop:Generator_ColumnPropNameInTable="ПрофColumn" msprop:Generator_ColumnVarNameInTable="columnПроф" msprop:Generator_UserColumnName="Проф" type="xs:string" minOccurs="0" />
+              <xs:element name="Дата_выд" msprop:Generator_ColumnPropNameInRow="Дата_выд" msprop:Generator_ColumnPropNameInTable="Дата_выдColumn" msprop:Generator_ColumnVarNameInTable="columnДата_выд" msprop:Generator_UserColumnName="Дата_выд" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Патенты_по_месяцам" msprop:Generator_TableClassName="Патенты_по_месяцамDataTable" msprop:Generator_TableVarName="tableПатенты_по_месяцам" msprop:Generator_TablePropName="Патенты_по_месяцам" msprop:Generator_RowDeletingName="Патенты_по_месяцамRowDeleting" msprop:Generator_RowChangingName="Патенты_по_месяцамRowChanging" msprop:Generator_RowEvHandlerName="Патенты_по_месяцамRowChangeEventHandler" msprop:Generator_RowDeletedName="Патенты_по_месяцамRowDeleted" msprop:Generator_UserTableName="Патенты_по_месяцам" msprop:Generator_RowChangedName="Патенты_по_месяцамRowChanged" msprop:Generator_RowEvArgName="Патенты_по_месяцамRowChangeEvent" msprop:Generator_RowClassName="Патенты_по_месяцамRow">
+        <xs:element name="Патенты_по_месяцам" msprop:Generator_RowClassName="Патенты_по_месяцамRow" msprop:Generator_RowEvHandlerName="Патенты_по_месяцамRowChangeEventHandler" msprop:Generator_RowDeletedName="Патенты_по_месяцамRowDeleted" msprop:Generator_RowDeletingName="Патенты_по_месяцамRowDeleting" msprop:Generator_RowEvArgName="Патенты_по_месяцамRowChangeEvent" msprop:Generator_TablePropName="Патенты_по_месяцам" msprop:Generator_RowChangedName="Патенты_по_месяцамRowChanged" msprop:Generator_RowChangingName="Патенты_по_месяцамRowChanging" msprop:Generator_TableClassName="Патенты_по_месяцамDataTable" msprop:Generator_UserTableName="Патенты_по_месяцам" msprop:Generator_TableVarName="tableПатенты_по_месяцам">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Год" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_UserColumnName="Год" type="xs:short" minOccurs="0" />
-              <xs:element name="Месяц" msprop:Generator_ColumnVarNameInTable="columnМесяц" msprop:Generator_ColumnPropNameInRow="Месяц" msprop:Generator_ColumnPropNameInTable="МесяцColumn" msprop:Generator_UserColumnName="Месяц" type="xs:short" minOccurs="0" />
-              <xs:element name="Кол-во_x0020_патентов" msprop:Generator_ColumnVarNameInTable="_columnКол_во_патентов" msprop:Generator_ColumnPropNameInRow="_Кол_во_патентов" msprop:Generator_ColumnPropNameInTable="_Кол_во_патентовColumn" msprop:Generator_UserColumnName="Кол-во патентов" type="xs:int" minOccurs="0" />
+              <xs:element name="Год" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_UserColumnName="Год" type="xs:short" minOccurs="0" />
+              <xs:element name="Месяц" msprop:Generator_ColumnPropNameInRow="Месяц" msprop:Generator_ColumnPropNameInTable="МесяцColumn" msprop:Generator_ColumnVarNameInTable="columnМесяц" msprop:Generator_UserColumnName="Месяц" type="xs:short" minOccurs="0" />
+              <xs:element name="Кол-во_x0020_патентов" msprop:Generator_ColumnPropNameInRow="_Кол_во_патентов" msprop:Generator_ColumnPropNameInTable="_Кол_во_патентовColumn" msprop:Generator_ColumnVarNameInTable="_columnКол_во_патентов" msprop:Generator_UserColumnName="Кол-во патентов" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="РВП_по_месяцам" msprop:Generator_TableClassName="РВП_по_месяцамDataTable" msprop:Generator_TableVarName="tableРВП_по_месяцам" msprop:Generator_RowChangedName="РВП_по_месяцамRowChanged" msprop:Generator_TablePropName="РВП_по_месяцам" msprop:Generator_RowDeletingName="РВП_по_месяцамRowDeleting" msprop:Generator_RowChangingName="РВП_по_месяцамRowChanging" msprop:Generator_RowEvHandlerName="РВП_по_месяцамRowChangeEventHandler" msprop:Generator_RowDeletedName="РВП_по_месяцамRowDeleted" msprop:Generator_RowClassName="РВП_по_месяцамRow" msprop:Generator_UserTableName="РВП_по_месяцам" msprop:Generator_RowEvArgName="РВП_по_месяцамRowChangeEvent">
+        <xs:element name="РВП_по_месяцам" msprop:Generator_RowEvHandlerName="РВП_по_месяцамRowChangeEventHandler" msprop:Generator_RowDeletedName="РВП_по_месяцамRowDeleted" msprop:Generator_RowDeletingName="РВП_по_месяцамRowDeleting" msprop:Generator_RowEvArgName="РВП_по_месяцамRowChangeEvent" msprop:Generator_TablePropName="РВП_по_месяцам" msprop:Generator_RowChangedName="РВП_по_месяцамRowChanged" msprop:Generator_RowChangingName="РВП_по_месяцамRowChanging" msprop:Generator_TableClassName="РВП_по_месяцамDataTable" msprop:Generator_RowClassName="РВП_по_месяцамRow" msprop:Generator_TableVarName="tableРВП_по_месяцам" msprop:Generator_UserTableName="РВП_по_месяцам">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Год" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_UserColumnName="Год" type="xs:short" minOccurs="0" />
-              <xs:element name="Месяц" msprop:Generator_ColumnVarNameInTable="columnМесяц" msprop:Generator_ColumnPropNameInRow="Месяц" msprop:Generator_ColumnPropNameInTable="МесяцColumn" msprop:Generator_UserColumnName="Месяц" type="xs:short" minOccurs="0" />
-              <xs:element name="Кол-во_x0020_РВП" msprop:Generator_ColumnVarNameInTable="_columnКол_во_РВП" msprop:Generator_ColumnPropNameInRow="_Кол_во_РВП" msprop:Generator_ColumnPropNameInTable="_Кол_во_РВПColumn" msprop:Generator_UserColumnName="Кол-во РВП" type="xs:int" minOccurs="0" />
+              <xs:element name="Год" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_UserColumnName="Год" type="xs:short" minOccurs="0" />
+              <xs:element name="Месяц" msprop:Generator_ColumnPropNameInRow="Месяц" msprop:Generator_ColumnPropNameInTable="МесяцColumn" msprop:Generator_ColumnVarNameInTable="columnМесяц" msprop:Generator_UserColumnName="Месяц" type="xs:short" minOccurs="0" />
+              <xs:element name="Кол-во_x0020_РВП" msprop:Generator_ColumnPropNameInRow="_Кол_во_РВП" msprop:Generator_ColumnPropNameInTable="_Кол_во_РВПColumn" msprop:Generator_ColumnVarNameInTable="_columnКол_во_РВП" msprop:Generator_UserColumnName="Кол-во РВП" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -799,11 +799,11 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="СтраныМигранты" msdata:parent="Страна" msdata:child="Мигрант" msdata:parentkey="ID_стран" msdata:childkey="Страна" msprop:Generator_UserChildTable="Мигрант" msprop:Generator_ChildPropName="GetМигрантRows" msprop:Generator_UserRelationName="СтраныМигранты" msprop:Generator_RelationVarName="relationСтраныМигранты" msprop:Generator_UserParentTable="Страна" msprop:Generator_ParentPropName="СтранаRow" />
-      <msdata:Relationship name="ЦелиМигрант" msdata:parent="Цели" msdata:child="Мигрант" msdata:parentkey="Код_цели" msdata:childkey="Цель" msprop:Generator_UserChildTable="Мигрант" msprop:Generator_ChildPropName="GetМигрантRows" msprop:Generator_UserRelationName="ЦелиМигрант" msprop:Generator_RelationVarName="relationЦелиМигрант" msprop:Generator_UserParentTable="Цели" msprop:Generator_ParentPropName="ЦелиRow" />
-      <msdata:Relationship name="МигрантыПатент" msdata:parent="Мигрант" msdata:child="Патент" msdata:parentkey="ID_миг" msdata:childkey="ID_миг" msprop:Generator_UserChildTable="Патент" msprop:Generator_ChildPropName="GetПатентRows" msprop:Generator_UserRelationName="МигрантыПатент" msprop:Generator_ParentPropName="МигрантRow" msprop:Generator_RelationVarName="relationМигрантыПатент" msprop:Generator_UserParentTable="Мигрант" />
-      <msdata:Relationship name="ПрофессияПатент" msdata:parent="Профессия" msdata:child="Патент" msdata:parentkey="ID_проф" msdata:childkey="Проф" msprop:Generator_UserChildTable="Патент" msprop:Generator_ChildPropName="GetПатентRows" msprop:Generator_UserRelationName="ПрофессияПатент" msprop:Generator_RelationVarName="relationПрофессияПатент" msprop:Generator_UserParentTable="Профессия" msprop:Generator_ParentPropName="ПрофессияRow" />
-      <msdata:Relationship name="МигрантыРВП" msdata:parent="Мигрант" msdata:child="РВП" msdata:parentkey="ID_миг" msdata:childkey="ID_миг" msprop:Generator_UserChildTable="РВП" msprop:Generator_ChildPropName="GetРВПRows" msprop:Generator_UserRelationName="МигрантыРВП" msprop:Generator_ParentPropName="МигрантRow" msprop:Generator_RelationVarName="relationМигрантыРВП" msprop:Generator_UserParentTable="Мигрант" />
+      <msdata:Relationship name="СтраныМигранты" msdata:parent="Страна" msdata:child="Мигрант" msdata:parentkey="ID_стран" msdata:childkey="Страна" msprop:Generator_UserParentTable="Страна" msprop:Generator_UserChildTable="Мигрант" msprop:Generator_RelationVarName="relationСтраныМигранты" msprop:Generator_ChildPropName="GetМигрантRows" msprop:Generator_ParentPropName="СтранаRow" msprop:Generator_UserRelationName="СтраныМигранты" />
+      <msdata:Relationship name="ЦелиМигрант" msdata:parent="Цели" msdata:child="Мигрант" msdata:parentkey="Код_цели" msdata:childkey="Цель" msprop:Generator_UserParentTable="Цели" msprop:Generator_UserChildTable="Мигрант" msprop:Generator_RelationVarName="relationЦелиМигрант" msprop:Generator_ChildPropName="GetМигрантRows" msprop:Generator_ParentPropName="ЦелиRow" msprop:Generator_UserRelationName="ЦелиМигрант" />
+      <msdata:Relationship name="МигрантыПатент" msdata:parent="Мигрант" msdata:child="Патент" msdata:parentkey="ID_миг" msdata:childkey="ID_миг" msprop:Generator_ChildPropName="GetПатентRows" msprop:Generator_UserChildTable="Патент" msprop:Generator_RelationVarName="relationМигрантыПатент" msprop:Generator_UserRelationName="МигрантыПатент" msprop:Generator_UserParentTable="Мигрант" msprop:Generator_ParentPropName="МигрантRow" />
+      <msdata:Relationship name="ПрофессияПатент" msdata:parent="Профессия" msdata:child="Патент" msdata:parentkey="ID_проф" msdata:childkey="Проф" msprop:Generator_UserParentTable="Профессия" msprop:Generator_UserChildTable="Патент" msprop:Generator_RelationVarName="relationПрофессияПатент" msprop:Generator_ChildPropName="GetПатентRows" msprop:Generator_ParentPropName="ПрофессияRow" msprop:Generator_UserRelationName="ПрофессияПатент" />
+      <msdata:Relationship name="МигрантыРВП" msdata:parent="Мигрант" msdata:child="РВП" msdata:parentkey="ID_миг" msdata:childkey="ID_миг" msprop:Generator_ChildPropName="GetРВПRows" msprop:Generator_UserChildTable="РВП" msprop:Generator_RelationVarName="relationМигрантыРВП" msprop:Generator_UserRelationName="МигрантыРВП" msprop:Generator_UserParentTable="Мигрант" msprop:Generator_ParentPropName="МигрантRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
